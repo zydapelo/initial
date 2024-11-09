@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Transitions</title>
+		<link href="transition-delay.css" type="text/css" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	</head>
+	<body>
+		<header>
+		</header>
+		<nav>
+			<div class="logo">
+				<a href="transition.html">
+					<img class="ML" src="logo.svg" alt="">
+				</a>
+			</div>
+				<ul>
+					<li>
+						<a class="grundlagen" href="transition-grundlagen.html">Grundlagen</a>
+					</li>
+					<li>
+						<a class="property" href="transition-property.html">property</a>
+					</li>
+					<li>
+						<a class="duration" href="transition-duration.html">duration</a>
+					</li>
+					<li>
+						<a class="timing-function" href="transition-timing-function.html">timing-function</a>
+					</li>
+					<li>
+						<a class="delay" href="transition-delay.html">delay</a>
+					</li>
+				</ul>
+		</nav>
+		<div class="main">
+  	<aside>
+		</aside>
+		<section>
+			<div class="container">
+				<h2>transition-delay</h2>
+				<p>Durch transition-delays bleibt der Zustand für eine bestimmte Zeit nach dem Auslösen bestehen</p>
+				<ul class="listeBeispiel">
+					<li>
+						<div class="beispiel">
+							<p>[selector] { [Startzustand]; transition-delay: [Wert]ms; }</p>
+							<p>[selector]:is(:hover, :focus) { [Mögliche Änderungen]; }</p>
+							<div class="vorschau">
+								<div class="quadrat keinDelay">kein delay</div>
+								<div class="quadrat delay100">100ms delay</div>
+								<div class="quadrat delay200">200ms delay</div>
+								<div class="quadrat delay500">500ms delay</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+		</div>
+		<footer>
+		</footer>
+	</body>
+</html>

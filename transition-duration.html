@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Transitions</title>
+		<link href="transition-duration.css" type="text/css" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	</head>
+	<body>
+		<header>
+
+		</header>
+
+		<nav>
+			<div class="logo">
+				<a href="transition.html">
+					<img class="ML" src="logo.svg" alt="">
+				</a>
+			</div>
+				<ul>
+					<li>
+						<a class="grundlagen" href="transition-grundlagen.html">Grundlagen</a>
+					</li>
+					<li>
+						<a class="property" href="transition-property.html">property</a>
+					</li>
+					<li>
+						<a class="duration" href="transition-duration.html">duration</a>
+					</li>
+					<li>
+						<a class="timing-function" href="transition-timing-function.html">timing-function</a>
+					</li>
+					<li>
+						<a class="delay" href="transition-delay.html">delay</a>
+					</li>
+				</ul>
+		</nav>
+		<div class="container">
+		<section>
+			<div class="container">
+				<h2>transition-duration</h2>
+				<p>Die transition-duration legt die Dauer der Transition fest, also die Zeit in der ein Übergang stattfindet.</p>
+        <p>Diese wird in Sekunden oder Millisekunden angegeben.</p>
+			</div>
+				<ul class="listeBeispiel">
+					<li>
+						<div class="beispiel">
+							<p>[selector] { [Startzustand]; transition-duration: [Zahl]ms/s; }</p>
+							<p>[selector]:is(:hover, :focus) { [Mögliche Änderungen]; }</p>
+							<div class="vorschau">
+								<div class="quadrat sofort">sofort</div>
+								<div class="quadrat duration200">200ms</div>
+								<div class="quadrat duration500">500ms</div>
+								<div class="quadrat duration100">800ms </div>
+							</div>
+						</div>
+					</li>
+				</ul>
+		</section>
+		</div>
+		<footer>
+
+		</footer>
+
+	</body>
+</html>
