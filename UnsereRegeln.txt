@@ -1,0 +1,8 @@
+Unsere Regeln für die Zusammenarbeit
+
+1. Jeder arbeitet auf seinem Branch.
+
+2. Nur überprüfte Inhalte werden commited.
+
+3. Wenn Inhalte zusammengefügt werden sollen, werden diese
+    in erster Linie gemerged.
