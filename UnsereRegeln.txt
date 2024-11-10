@@ -2,8 +2,10 @@ Unsere Regeln für die Zusammenarbeit
 
 Für die beste Zusammenarbeit empfehle ich das Git Flow Branching Modell. Mit einem main- und einem develop-Branch können eventuelle Update-Probleme vermieden werden, sodass eine sichere Hauptlinie gewährleistet ist.
 
-1. Jeder arbeitet auf seinem Branch.
+1. Es wird auf themenbasierten Branches gearbeitet.
 
-2. Nur überprüfte Inhalte werden commited.
+2. Regelmäßige Commits mit Aussagekräftigem Comment.
 
-3. Wenn Inhalte zusammengefügt werden sollen, werden diese in erster Linie gemerged.
+3. Nur überprüfte Inhalte werden commited.
+
+4. Wenn Inhalte zusammengefügt werden sollen, werden diese in erster Linie gemerged.
