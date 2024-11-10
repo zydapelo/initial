@@ -132,6 +132,19 @@ h3:hover, h3:focus {
 a {
 	text-decoration: none;
 }
+.containerA:after {
+	content: '';
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+/* Anker Nebenregister */
+.anker:target:before {
+	content: "";
+	display: block;
+	height: 120px;
+	margin: -120px 0 0;
+}
 /* Inhalt - Struktur */
 section {
 	box-sizing: border-box;
@@ -141,11 +154,19 @@ section {
 	height: 100%;
 	padding: 60px;
 }
+.main {
+	overflow: visible;
+	height: 100%;
+}
 .container:after {
 	content: '';
 	clear: both;
 	display: block;
 	visibility: hidden;
+}
+.container {
+	height: 700px;
+	padding: 50px;
 }
 /* Liste für Beispiele  */
 .listeBeispiel {
