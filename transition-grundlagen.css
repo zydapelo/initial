@@ -112,7 +112,7 @@ aside{
 	bottom: 0;
 	float: left;
 	padding: 15px;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 }
 aside h3 {
@@ -160,7 +160,7 @@ section {
 	visibility: hidden;
 }
 .container {
-	height: 700px;
+	height: 350px;
 	padding: 50px;
 }
 /* Themenblock 1 */
