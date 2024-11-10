@@ -164,7 +164,7 @@ section {
 	visibility: hidden;
 }
 .container {
-	height: 700px;
+	height: auto;
 	padding: 50px;
 }
 /* Liste für Beispiele  */

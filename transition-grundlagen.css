@@ -160,7 +160,7 @@ section {
 	visibility: hidden;
 }
 .container {
-	height: 350px;
+	height: auto;
 	padding: 50px;
 }
 /* Themenblock 1 */
