@@ -18,13 +18,16 @@ body {
   padding: 0;
 }
 p {
-	font-size: 32px;
-	padding-bottom: 5px;
+	font-size: 28px;
+	padding-bottom: 10px;
 }
 h2 {
 	font-size: 40px;
 	padding-bottom: 10px;
 	font-family: 'Open Sans Condensed Bold', sans-serif;
+}
+a {
+	text-decoration: none;
 }
 /* Seitenstruktur */
 header, footer {
