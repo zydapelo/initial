@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Open Sans Condensed Light', sans-serif;
+	background: #092048;
+	color: white;
+	display: grid;
+	gap: 0;
+  height: 100%;
+}
+/* Allgemein */
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+	font-size: 28px;
+	padding-bottom: 10px;
+}
+h2 {
+	font-size: 40px;
+	padding-bottom: 10px;
+	font-family: 'Open Sans Condensed Bold', sans-serif;
+}
+.code p {
+	font-size: 18px;
+}
+/* Seitenstruktur */
+header, footer {
+	grid-column: 1/-1;
+}
+header {
+	text-align: center;
+}
+/* Logo */
+.ML {
+	height: 70px;
+	padding: 5px;
+	padding-left: 20px;
+	float: left;
+	display: block;
+}
+/* Navigation */
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #314C7C;
+	position: sticky;
+	top: 0;
+	left: 0:
+	right: 0;
+	z-index: 10;
+}
+nav ul {
+  text-align: right;
+	padding-right: 20px;
+}
+nav ul li {
+  float: none;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+}
+nav ul li a {
+  display: block;
+	line-height: 30px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px 15px;
+	font-size: 25px;
+  border-radius: 30px;
+  transition: background 0.5s, color 0.5s;
+}
+/* Hover Navigation */
+nav ul li a:hover, nav ul li:hover {
+  background-color: #ddd;
+	color: black;
+  border-radius: 50px;
+}
+nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  background-color: #ddd;
+  color: black;
+  text-align: left;
+  padding: 5px;
+}
+/* Ausgewählte Page */
+.duration {
+  border-radius: 50px;
+  border-width: 1px;
+  border-color: white;
+	border-style: solid;
+	visibility: visible;
+	padding: 4px 14px;
+}
+/* Nebenregister */
+aside{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	background: #051532;
+	position: fixed;
+	top: 70px;
+	bottom: 0;
+	float: left;
+	padding: 15px;
+	font-size: 25px;
+	text-align: center;
+}
+aside h3 {
+	padding: 10px 25px 10px 25px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	border-radius: 50px;
+	color: white;
+	transition: background 0.5s, color 0.5s;
+	transition: all 0.5s ease-out;
+	text-align: left;
+}
+h3:hover, h3:focus {
+	background-color: rgba(255,255,255,0.6);
+	color: white;
+}
+a {
+	text-decoration: none;
+}
+.containerA:after {
+	content: '';
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+/* Anker Nebenregister */
+.anker:target:before {
+	content: "";
+	display: block;
+	height: 120px;
+	margin: -120px 0 0;
+}
+/* Inhalt - Struktur */
+section {
+	box-sizing: border-box;
+	width: 80%;
+	float: right;
+	background: #092048;
+	height: 100%;
+}
+.main {
+	overflow: visible;
+	height: 100%;
+}
+.container:after {
+	content: '';
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+.container {
+	height: auto;
+	padding: 50px;
+}
+.container ul li {
+	text-indent: 30px;
+	font-size: 28px;
+}
+/* Liste für Beispiele  */
+.listeBeispiel {
+	list-style: none;
+	width: 100%;
+	height: auto;
+	float: none;
+	text-align: center;
+	padding: 10px;
+
+}
+.listeBeispiel li {
+	display: inline-block;
+	margin: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	width: auto;
+  text-align: center;
+	align-content: center;
+	vertical-align: top;
+}
+/* Beispiel platzhalter */
+.vorschau {
+	background: #051532;
+	height: 100%;
+	width: auto;
+	margin-top: 20px;
+	padding: 10px;
+	text-align: left;
+}
+.quadrat {
+  width: 120px;
+	height: 120px;
+  background-color: #BDCBE6;
+	color: black;
+	font-size: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 15px;
+	display: inline-block;
+	align-content: center;
+}
+.quadrat.sofort {
+	transition-duration: 0s;
+}
+.quadrat.duration200 {
+	transition-duration: 200ms;
+}
+.quadrat.duration500 {
+	transition-duration: 500ms;
+}
+.quadrat.duration100 {
+	transition-duration: 800ms;
+}
+.quadrat:is(:hover, :focus) {
+  background-color: #314C7C;
+}
+
+@media screen and (max-width: 51em) {
+
+  .logo {
+		display: none;
+	}
+	nav ul {
+	  text-align: center;
+	}
+
+}

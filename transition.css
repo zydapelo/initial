@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Open Sans Condensed Light', sans-serif;
+	background: #092048;
+	color: white;
+	display: grid;
+	gap: 0;
+  height: 100%;
+}
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+	grid-column: 1/-1;
+}
+header {
+	text-align: center;
+}
+/* Logo */
+.ML {
+	height: 70px;
+	padding: 5px;
+	padding-left: 20px;
+	float: left;
+	display: block;
+}
+/* Navigation */
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #314C7C;
+	position: sticky;
+	top: 0;
+	left: 0:
+	right: 0;
+}
+nav ul {
+  text-align: right;
+	padding-right: 20px;
+}
+nav ul li {
+  float: none;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+}
+nav ul li a {
+  display: block;
+	line-height: 30px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px 15px;
+	font-size: 25px;
+  border-radius: 30px;
+  transition: background 0.5s, color 0.5s;
+}
+/* Hover Navigation */
+nav ul li a:hover, nav ul li:hover {
+  background-color: #ddd;
+	color: black;
+  border-radius: 50px;
+}
+nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  background-color: #ddd;
+  color: black;
+  text-align: left;
+  padding: 5px;
+}
+/* Inhalt */
+.container:after {
+	content: '';
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+/* Überschrift */
+h1 {
+	font-size: 120px;
+	text-align: center;
+	padding: 60px 20px;
+	font-family: 'Open Sans Condensed Bold', sans-serif;
+}
+/* Hintergrund */
+.wolken {
+	width: 100%;
+	background-position: center bottom;
+	position: fixed;
+	text-align: center;
+	z-index: 1;
+}
+
+
+/* Mobil/ kleine Fenster */
+@media screen and (max-width: 51em) {
+
+  .logo {
+		display: none;
+	}
+	nav ul {
+	  text-align: center;
+	}
+
+}
