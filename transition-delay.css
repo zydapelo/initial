@@ -18,13 +18,16 @@ body {
   padding: 0;
 }
 p {
-	font-size: 32px;
-	padding-bottom: 5px;
+	font-size: 28px;
+	padding-bottom: 10px;
 }
 h2 {
 	font-size: 40px;
 	padding-bottom: 10px;
 	font-family: 'Open Sans Condensed Bold', sans-serif;
+}
+a {
+	text-decoration: none;
 }
 /* Seitenstruktur */
 header, footer {
@@ -127,45 +130,25 @@ h3:hover, h3:focus {
 	background-color: rgba(255,255,255,0.6);
 	color: white;
 }
-/*Nebenregister
-aside{
-	width: 20%;
-	height: 100%;
-	display: flex;
-	background: #051532;
-	position: fixed;
-	top: 70px;
-	bottom: 0;
-	float: left;
-	padding: 20px;
-	font-size: 25px;
-	align-self: flex-start;
-}
-aside h3 {
-	padding: 10px;
-	margin-bottom: 20px;
-	margin-top: 10px;
-	border-radius: 50px;
-	transition: background 0.5s, color 0.5s;
-}
-aside h3:hover {
-	background-color: rgba(255,255,255,0.6);
-	color: white;
-}
-.ainhalt:after {
+.containerA:after {
 	content: '';
 	clear: both;
 	display: block;
 	visibility: hidden;
 }
-*/
+/* Anker Nebenregister */
+.anker:target:before {
+	content: "";
+	display: block;
+	height: 120px;
+	margin: -120px 0 0;
+}
 /* Inhalt - Struktur */
 section {
 	width: 80%;
 	float: right;
 	background: #092048;
 	height: 100%;
-	padding: 60px;
 }
 .main {
 	overflow: visible;
@@ -176,6 +159,10 @@ section {
 	clear: both;
 	display: block;
 	visibility: hidden;
+}
+.container {
+	height: auto;
+	padding: 50px;
 }
 /* Liste für Beispiele  */
 .listeBeispiel {

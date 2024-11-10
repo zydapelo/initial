@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 p {
-	font-size: 32px;
+	font-size: 28px;
 	padding-bottom: 10px;
 }
 h2 {
@@ -112,7 +112,7 @@ aside{
 	bottom: 0;
 	float: left;
 	padding: 15px;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 }
 aside h3 {
@@ -129,26 +129,6 @@ h3:hover, h3:focus {
 	background-color: rgba(255,255,255,0.6);
 	color: white;
 }
-/* Idee - farbiges Element
-.containerA a {
-	padding: 10px 25px 10px 25px;
-	margin-bottom: 20px;
-	margin-top: 10px;
-	border-radius: 50px;
-	color: white;
-	transition: background 0.5s, color 0.5s;
-	transition: all 0.5s ease-out;
-	text-align: left;
-	font-size: 40px;
-	padding-bottom: 10px;
-	font-family: 'Open Sans Condensed Bold', sans-serif;
-}
-.containerA a:hover,
-.containerA a:focus {
-	background-color: rgba(255,255,255,0.6);
-	color: white;
-}
-*/
 .containerA:after {
 	content: '';
 	clear: both;
@@ -180,7 +160,7 @@ section {
 	visibility: hidden;
 }
 .container {
-	height: 700px;
+	height: auto;
 	padding: 50px;
 }
 /* Themenblock 1 */
