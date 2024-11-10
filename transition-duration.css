@@ -167,6 +167,10 @@ section {
 	height: auto;
 	padding: 50px;
 }
+.container ul li {
+	text-indent: 30px;
+	font-size: 28px;
+}
 /* Liste für Beispiele  */
 .listeBeispiel {
 	list-style: none;
