@@ -163,6 +163,10 @@ section {
 	height: auto;
 	padding: 50px;
 }
+.container ul li {
+	text-indent: 30px;
+	font-size: 28px;
+}
 /* Themenblock 1 */
 .grafic {
 	width: 80%;
