@@ -18,13 +18,16 @@ body {
   padding: 0;
 }
 p {
-	font-size: 32px;
-	padding-bottom: 5px;
+	font-size: 28px;
+	padding-bottom: 10px;
 }
 h2 {
 	font-size: 40px;
 	padding-bottom: 10px;
 	font-family: 'Open Sans Condensed Bold', sans-serif;
+}
+a {
+	text-decoration: none;
 }
 /* Seitenstruktur */
 header, footer {
@@ -126,6 +129,19 @@ h3:hover, h3:focus {
 	background-color: rgba(255,255,255,0.6);
 	color: white;
 }
+.containerA:after {
+	content: '';
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+/* Anker Nebenregister */
+.anker:target:before {
+	content: "";
+	display: block;
+	height: 120px;
+	margin: -120px 0 0;
+}
 /* Inhalt - Struktur */
 section {
 	box-sizing: border-box;
@@ -133,13 +149,20 @@ section {
 	float: right;
 	background: #092048;
 	height: 100%;
-	padding: 60px;
+}
+.main {
+	overflow: visible;
+	height: 100%;
 }
 .container:after {
 	content: '';
 	clear: both;
 	display: block;
 	visibility: hidden;
+}
+.container {
+	height: 700px;
+	padding: 50px;
 }
 /* Liste für Beispiele  */
 .listeBeispiel {
